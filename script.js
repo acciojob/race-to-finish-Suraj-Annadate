@@ -12,8 +12,8 @@ setTimeout(() = { resolve("b")
 }, 2000)
 }) 
 let c = new Promise(resolve => {
-‘setTimeout(() => {
-resolve("a")
+setTimeout(() => {
+resolve("c")
 }, 1000)
 })
 let d = new Promise(resolve => {
@@ -25,8 +25,8 @@ setTimeout(() => { resolve("e")
 }, 5000)
 })
 
-window.promises=[a,b,c,d,e];
 let x = Promise.any([a,b,c,d,e])
+window.promises=[a,b,c,d,e];
 x.then((data) => {
 	const element = document.getElementById("output")
 	element.innerText=data;
