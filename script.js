@@ -4,11 +4,13 @@ window.promises = [];
 // add your promises to the array `promises`
 // Array of promises
 let a = new Promise(resolve => {
-setTimeout(() => { resolve("a")
+setTimeout(() => { 
+	resolve("a")
 }, 3000)
 })
 let b = new Promise(resolve => {
-setTimeout(() = { resolve("b")
+setTimeout(() => { 
+	resolve("b")
 }, 2000)
 }) 
 let c = new Promise(resolve => {
@@ -17,11 +19,13 @@ resolve("c")
 }, 1000)
 })
 let d = new Promise(resolve => {
-setTimeout(() => { resolve("d")
+setTimeout(() => { 
+	resolve("d")
 }, 4000)
 })
 	let e = new Promise(resolve => {
-setTimeout(() => { resolve("e")
+setTimeout(() => { 
+	resolve("e")
 }, 5000)
 })
 
